@@ -6,8 +6,11 @@ function App() {
     <div className="container">
       <h1 className="title">Counter Example</h1>
       <div className="counters">
-       <Counter name='Steps' goal={10000} />    
-       <Counter name='ScreenTime' goal={8} />    
+        {/* {TODO:RENAME ISOVER} */}
+        
+       <Counter name='Steps' goal={{value: 10, unit:'steps', isOver:true }} />    
+       <Counter name='ScreenTime' goal={{value:3, unit:'minutes', isOver:false}} />    
+       <Counter name='Exercise' goal={{value:30, unit:'minutes', isOver:true}} />    
       </div>
     </div>
   );
